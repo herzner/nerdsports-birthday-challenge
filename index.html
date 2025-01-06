@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerd Sports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen">
+            <h2>So ... you want cake?</h2>
+            <p>Come and get it!</p>
+            <button id="start-game">Do some nerd sports</button>
+        </div>
+        
+        <!-- Pre-Challenge Screen -->
+        <div id="pre-challenge-screen" class="hidden">
+            <h2>Breathe! Get Ready!</h2>
+            <p id="challenge-message"></p>
+            <button id="start-challenge">Start</button>
+        </div>
+        
+        <!-- Challenges -->
+        <div id="challenge-1" class="challenge hidden">
+            <h2>Leet is all y0u n33d</h2>
+            <p>Say: <span id="leet-phrase">I want cake!</span></p>
+            <p>Time remaining: <span id="leet-timer">10</span> seconds</p>
+            <input type="text" id="leet-input" placeholder="Type here...">
+            <button id="leet-submit">Submit</button>
+            <p id="leet-feedback"></p>
+        </div>
+
+        <div id="challenge-2" class="challenge hidden">
+            <h2>Bug Killer</h2>
+            <p>Eliminate the bugs!</p>
+            <p>Time remaining: <span id="bug-timer">15</span> seconds</p>
+            <div id="bug-area"></div>
+            <p id="bug-feedback"></p>
+        </div>
+
+        <div id="challenge-3" class="challenge hidden">
+            <h2>Typo Defeater</h2>
+            <p>Fix the typos:</p>
+            <p>Time remaining: <span id="code-timer">20</span> seconds</p>
+            <textarea id="code-editor">conslole.log("Hello Wrold!);</textarea>
+            <button id="code-submit">Check Code</button>
+            <p id="code-feedback"></p>
+        </div>
+
+        <!-- Fail Screen -->
+        <div id="fail-screen" class="hidden">
+            <h2>Oops!</h2>
+            <p>Don't worry, you can try again!</p>
+            <button id="retry-challenge">Retry</button>
+        </div>
+
+        <!-- Final Screen -->
+        <div id="final-screen" class="hidden">
+            <img class="cake" src="cake.webp">
+            <p>Here is your cake! Happy birthday (nachträglich) 🎉</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
